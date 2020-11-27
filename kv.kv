@@ -1,0 +1,162 @@
+<UnaScreen>:
+
+<MainWid>:
+
+    Screen:
+        name: "screen_a"
+        BoxLayout:
+            Image:
+                source: 'imagenes/guitarra.jpg'
+                allow_stretch: True
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+        BoxLayout:
+            cols:2
+            size_hint_y: 0.1
+            Button:
+                text: "Mi"
+                on_press: root.current = "screen_b"
+            Button:
+                text: "La"
+                on_press: root.current = "screen_c"
+            Button:
+                text: "Re"
+                on_press: root.current = "screen_d"
+            Button:
+                text: "Sol"
+                on_press: root.current = "screen_e"
+            Button:
+                text: "Si"
+                on_press: root.current = "screen_f"
+            Button:
+                text: "Mi"
+                on_press: root.current = "screen_g"
+
+
+    Screen:
+        name: "screen_b"
+        BoxLayout:
+            orientation: "vertical"
+            Image:
+                source: 'imagenes/Mi.jpg'
+                allow_stretch: True
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+            Button:
+                size_hint:0.6, 0.1
+                pos_hint :{'center_x':0.5, 'center_y':0.3}
+                text:'PLAY'
+                bold:True
+                background_color: (1, .36, .4, .55)
+                on_release: root.Mi()
+            Button:
+                size_hint_y: 0.1
+                text: "Volver"
+                on_press: root.current = "screen_a"
+
+    Screen:
+        name: "screen_c"
+        BoxLayout:
+            orientation: "vertical"
+            Image:
+                source: 'imagenes/La.jpg'
+                allow_stretch: True
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+            Button:
+                size_hint:0.6, 0.1
+                pos_hint :{'center_x':0.5, 'center_y':0.3}
+                text:'PLAY'
+                bold:True
+                background_color: (1, .36, .4, .55)
+                on_release: root.La()
+
+            Button:
+                size_hint_y: 0.1
+                text: "Volver"
+                on_press: root.current = "screen_a"
+
+    Screen:
+        name: "screen_d"
+        BoxLayout:
+            orientation: "vertical"
+            Image:
+                source: 'imagenes/Re.jpg'
+                allow_stretch: True
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+            Button:
+                size_hint:0.6, 0.1
+                pos_hint :{'center_x':0.5, 'center_y':0.3}
+                text:'PLAY'
+                bold:True
+                background_color: (1, .36, .4, .55)
+                on_release: root.Re()
+            Button:
+                size_hint_y: 0.1
+                text: "Volver"
+                on_press: root.current = "screen_a"
+
+    Screen:
+        name: "screen_e"
+        BoxLayout:
+            orientation: "vertical"
+            Image:
+                source: 'imagenes/Sol.jpg'
+                allow_stretch: True
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+            Button:
+                size_hint:0.6, 0.1
+                pos_hint :{'center_x':0.5, 'center_y':0.3}
+                text:'PLAY'
+                bold:True
+                background_color: (1, .36, .4, .55)
+                on_release: root.Sol()
+            Button:
+                size_hint_y: 0.1
+                text: "Volver"
+                on_press: root.current = "screen_a"
+
+    Screen:
+        name: "screen_f"
+        BoxLayout:
+            orientation: "vertical"
+            Image:
+                source: 'imagenes/Si.jpg'
+                allow_stretch: True
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+            Button:
+                size_hint:0.6, 0.1
+                pos_hint :{'center_x':0.5, 'center_y':0.3}
+                text:'PLAY'
+                bold:True
+                background_color: (1, .36, .4, .55)
+                on_release: root.Si()
+            Button:
+                size_hint_y: 0.1
+                text: "Volver"
+                on_press: root.current = "screen_a"
+    Screen:
+        name: "screen_g"
+        BoxLayout:
+            orientation: "vertical"
+            Image:
+                source: 'imagenes/Mip.jpg'
+                allow_stretch: True
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+            Button:
+                size_hint:0.6, 0.1
+                pos_hint :{'center_x':0.5, 'center_y':0.3}
+                text:'PLAY'
+                bold:True
+                background_color: (1, .36, .4, .55)
+                on_release: root.Mip()
+            Button:
+                size_hint_y: 0.1
+                text: "Volver"
+                on_press: root.current = "screen_a"
+
+    UnaScreen:
